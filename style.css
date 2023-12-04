@@ -24,7 +24,7 @@ body{
 .top{
     position: relative;
     width: 100%;
-    min-width: 650px;
+    min-width: 670px;
     height: 400px;
     background: linear-gradient(45deg, purple,blue);
     padding: 50px;
