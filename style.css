@@ -208,7 +208,7 @@ body {
 /* Achievements */
 .right_side ul {
     margin-left: 18px;
-    list-style: disc;
+    list-style: none;
 }
 
 .right_side ul li {
@@ -258,6 +258,7 @@ body {
         color-adjust: exact !important;
     }
 }
+
 
 
 
