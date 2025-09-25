@@ -201,24 +201,31 @@ body {
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     transition: background 0.3s ease;
+    z-index: 1000;
 }
 
 .print-btn:hover {
     background: #0077cc;
 }
 
-/* Hide button on PDF/Print */
+/* Print Styles */
 @media print {
     .print-btn {
-        display: none;
+        display: none !important; /* Hide button */
     }
     body {
         background: #fff;
+        -webkit-print-color-adjust: exact !important; /* Safari/Chrome */
+        color-adjust: exact !important;               /* Firefox */
+        print-color-adjust: exact !important;         /* Modern browsers */
     }
     .container {
         box-shadow: none;
         border-radius: 0;
     }
+    .top {
+        background: #004aad !important; /* Force blue header */
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
 }
-
-
